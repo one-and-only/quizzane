@@ -1,2 +1,2 @@
-# quizzane
-The Repository for Quizzane
+# quizado
+Repository of the Quizzane Quiz Website
