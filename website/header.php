@@ -7,25 +7,25 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
-        <a class="nav-link" href="index.php">Home</a>
+        <a class="nav-link" href="index">Home</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="create.php">Create Games</a>
+        <a class="nav-link" href="create">Create Games</a>
       </li>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Browse Games
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color: white;">
-          <a class="dropdown-item" href="games.php">Sports</a>
-          <a class="dropdown-item" href="games.php">Movies</a>
-          <a class="dropdown-item" href="games.php">TV Shows</a>
-          <a class="dropdown-item" href="games.php">Technology</a>
-          <a class="dropdown-item" href="games.php">Web Development</a>
-          <a class="dropdown-item" href="games.php">Education</a>
+          <a class="dropdown-item" href="games">Sports</a>
+          <a class="dropdown-item" href="games">Movies</a>
+          <a class="dropdown-item" href="games">TV Shows</a>
+          <a class="dropdown-item" href="games">Technology</a>
+          <a class="dropdown-item" href="games">Web Development</a>
+          <a class="dropdown-item" href="games">Education</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link disabled" href="community.php">Community</a>
+        <a class="nav-link disabled" href="community">Community</a>
       </li>
     </ul>
     <form class="form-inline my-2 my-lg-0">
