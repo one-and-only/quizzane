@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-light" style="background-color: #737373;">
+<nav class="navbar navbar-expand-lg navbar-light" style="background-image: -webkit-linear-gradient(left, white, #53ed65, #53e064);">
   <a class="navbar-brand" href="index.php"><img src="src/logos/quizzane-no-text.png" height="32" width=auto></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -16,7 +16,7 @@
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Browse Games
         </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color: #28a745;">
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color: white;">
           <a class="dropdown-item" href="games.php">Sports</a>
           <a class="dropdown-item" href="games.php">Movies</a>
           <a class="dropdown-item" href="games.php">TV Shows</a>
