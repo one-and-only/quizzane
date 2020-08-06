@@ -28,9 +28,9 @@
         <a class="nav-link disabled" href="community">Community</a>
       </li>
     </ul>
-    <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    <form class="form-inline my-2 my-lg-0" method="POST" action="games">
+      <input class="form-control mr-sm-2" name="search" type="search" placeholder="Game Title..." aria-label="Search">
+      <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Search Games</button>
     </form>
   </div>
 </nav>
