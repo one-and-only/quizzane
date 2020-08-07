@@ -45,7 +45,7 @@
                 <div class="form-content">
                     <div class="row">
                         <div class="col-md-6">
-                        <form action="registerbe.php" method="POST" name="signUpForm">
+                        <form action="src/registerbe.php" method="POST" name="signUpForm">
                             <div class="form-group">
                                 <input type="text" class="form-control" placeholder="Username *" name="username" required/>
                             </div>
