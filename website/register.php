@@ -50,7 +50,7 @@
                                 <input type="text" class="form-control" placeholder="Username *" name="username" required/>
                             </div>
                             <div class="form-group">
-                                <input type="text" class="form-control" name="email" placeholder="Email *" required/>
+                                <input type="email" class="form-control" name="email" placeholder="Email *" required/>
                             </div>
                         </div>
                         <div class="col-md-6">
