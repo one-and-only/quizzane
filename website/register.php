@@ -4,16 +4,18 @@
 {
     text-align: center;
     height: 80px;
-    background: -webkit-linear-gradient(left, #47bd24, #358c1b);
+    background: -webkit-linear-gradient(left, #98f5a3, #16c72b);
     color: #fff;
     font-weight: bold;
     line-height: 80px;
 }
 .form-content
 {
-    padding: 5%;
+    padding-top: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 3%;
     border: 1px solid #ced4da;
-    margin-bottom: 2%;
 }
 .form-control{
     border-radius:1.5rem;
@@ -45,7 +47,7 @@
                 <div class="form-content">
                     <div class="row">
                         <div class="col-md-6">
-                        <form action="registerbe.php" method="POST" name="signUpForm">
+                        <form action="src/registerbe.php" method="POST" name="signUpForm">
                             <div class="form-group">
                                 <input type="text" class="form-control" placeholder="Username *" name="username" required/>
                             </div>
@@ -63,7 +65,7 @@
                         </div>
                     </div>
                     <div style="padding-top: 20px;" align="center">
-                    <button type="submit" id="okButton" class="btnSubmit btnSubmit1">Submit</button>
+                    <button type="submit" id="okButton" class="btn btn-outline-primary" style="font-size: 25px;">Submit</button>
                     </div>
                     </form>
                 </div>
