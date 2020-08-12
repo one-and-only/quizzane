@@ -8,3 +8,5 @@ jobs:
     - uses: actions/checkout@master
     - name: PHP-Insights
       uses: docker://tienvx/phpinsights-action
+      with:
+        args: "-v --min-quality=90 --min-architecture=80 --min-style=90"
