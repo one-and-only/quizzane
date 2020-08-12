@@ -21,4 +21,5 @@ if ($registerSQL->execute($userInfo)) {
 } else {
     header('Location: /');
     echo '<form method="GET"><input type="hidden" value="failure"></form>';
+    exit();
 }
