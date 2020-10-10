@@ -31,8 +31,11 @@ if ($getLatestAnnouncements->execute()) {
         // Let's put the HTML directly here. No need for an extra array
     ?>
         <title>Announcements | Quizzane</title>
-        <div class="jumbotron" style="background-color: #3d94ff; color: white; padding-bottom: 3vh; max-width: 97vw; border-radius: 15px; overflow: hidden;">
-            <h1 class="display-4" style="font-size: 45px;"><?php echo $announcement['announcementDate']; ?></h1>
+        <div style="text-align: center; font-size: 25px; background-color: #67e827; color: white; border-radius: 15px;"><a>Latest Announcement</a></div>
+        <!-- empty div for padding -->
+        <div style="padding-bottom: 0.5vh;"></div>
+        <div class="jumbotron" style="background-color: #3d94ff; color: white; padding-bottom: 2vh; padding-top: 3vh; max-width: 97vw; border-radius: 30px; overflow: hidden;">
+            <h1 class="display-4" style="font-size: 30px;"><?php echo $announcement['announcementDate']; ?></h1>
             <hr class="my-4">
             <div class="lead announcement" style="max-width: 95vw;">
                 <?php 
@@ -41,8 +44,8 @@ if ($getLatestAnnouncements->execute()) {
                 ?>
             </div>
             <hr class="my-4">
-            <p>This is usually only part of the announcement. If you would like to read more, and view more announcements, please click the button below.</p>
-            <a class="btn-signature-green" href="announcements.php" style="font-size: 25px; text-decoration: none !important;" role="button">Read Announcements</a>
+            <p style="font-size: 15px;">This is usually only part of the announcement. If you would like to read more, and view more announcements, please click the button below.</p>
+            <a class="btn-signature-green" href="announcements.php" style="font-size: 20px; text-decoration: none !important;" role="button">Read Announcements</a>
         </div>
     <?php
     }
