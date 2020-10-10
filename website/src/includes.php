@@ -1,4 +1,6 @@
 <?php
+//set cache headers
+include('setCache.php');
 //stylesheets, scripts, and favicon
 echo '
 <!DOCTYPE html>

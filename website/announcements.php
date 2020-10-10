@@ -7,7 +7,7 @@ ob_end_flush();
 <div style="padding-top: 2vh; text-align: center; max-width: 97vw; margin-left: auto; margin-right: auto; display: block; overflow: auto; padding-bottom: 10vh;">
 <?php
 
-$getRecentAnnouncements = "SELECT * FROM announcements ORDER BY announcementDate ASC LIMIT 5";
+$getRecentAnnouncements = "SELECT * FROM announcements ORDER BY announcementDate DESC LIMIT 5";
 $getRecentAnnouncements = $pdo->prepare($getRecentAnnouncements);
 if ($getRecentAnnouncements->execute()) {
     // Here we're using fetchAll() to get all records

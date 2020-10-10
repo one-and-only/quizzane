@@ -157,6 +157,7 @@
 
 .nav-signature-green {
     background-image: -webkit-linear-gradient(left, white 1%, #53ed65, #53ed65, #53ed65, #53ed65, #53ed65, #53ed65, #53ed65, #53ed65, #53ed65);
+    box-shadow: 0px 10px 9px -6px #67e827;
 }
 
 

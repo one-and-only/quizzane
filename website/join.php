@@ -77,32 +77,37 @@ echo '
 </style>
 <link rel="stylesheet" href="src/styles.css">
 
-</head>
-<body class="join" onload="playJoin()">
-
 <audio id="join1">
-    <source src="audio/join-page-audio1.mp3" type="audio/mpeg">
+    <source src="/src/audio/join-page-audio1.mp3" type="audio/mpeg">
 </audio>
 
 <script>
 number = 1
 joinSong = "join" + number
+
 function playJoin() {
     let fn = function(number) {
-    let joinSong = "join" + number;
-    let audio = document.getElementById(joinSong);
-    audio.play();
-    audio.onended = function () {
-        if (number < 2) {
-            fn(number + 1);
+        let joinSong = "join" + number;
+        let audio = document.getElementById(joinSong);
+        audio.play();
+        audio.onended = function() {
+            if (number <= 1) {
+                fn(number + 1);
+            } else {
+                fn(1);
+            }
         }
-        else {
-            fn(1);
-        }
-    }
-};
-fn(1);
+    };
+    fn(1);
+}
+
+$(window).on("load", function() {
+    playJoin();
+});
 </script>
+
+</head>
+<body class="join">
 
 <div>
    <form action="joinbe.php" method="GET" style="padding-left: 40vw; padding-top: 30vh;">
