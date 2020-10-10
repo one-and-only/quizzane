@@ -40,6 +40,9 @@ if (isset($_SESSION['username'])) {
         </div>
       </li>
       <li class="nav-item">
+        <a class="nav-link btn-signature-blue" href="announcements.php">Announcements</a>
+      </li>
+      <li class="nav-item">
         <a class="nav-link disabled" href="community.php">Community</a>
       </li>
       </ul>
@@ -100,6 +103,9 @@ if (isset($_SESSION['username'])) {
           <a class="dropdown-item" href="games.php">Web Development</a>
           <a class="dropdown-item" href="games.php">Education</a>
         </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link btn-signature-blue" href="announcements.php">Announcements</a>
       </li>
       <li class="nav-item">
         <a class="nav-link disabled" href="community.php">Community</a>

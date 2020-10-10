@@ -26,7 +26,6 @@
     text-decoration: none;
 }
 
-
 /* blue button when hovered over */
 
 .btn-signature-blue:hover {
@@ -41,14 +40,12 @@
     color: black !important;
 }
 
-
 /* blue button when clicked */
 
 .btn-signature-blue:active {
     position: relative;
     top: 1px;
 }
-
 
 /* main styling for the green button */
 
@@ -77,7 +74,6 @@
     text-decoration: none;
 }
 
-
 /* the green button when hovered over */
 
 .btn-signature-green:hover {
@@ -92,14 +88,12 @@
     color: black !important;
 }
 
-
 /* the green button when clicked */
 
 .btn-signature-green:active {
     position: relative;
     top: 1px;
 }
-
 
 /* main styling for the red button */
 
@@ -128,7 +122,6 @@
     text-decoration: none;
 }
 
-
 /* the red button when hovered over */
 
 .btn-signature-red:hover {
@@ -142,14 +135,12 @@
     color: black;
 }
 
-
 /* the red button when clicked */
 
 .btn-signature-red:active {
     position: relative;
     top: 1px;
 }
-
 
 /* the green navbar gradient */
 
@@ -158,14 +149,12 @@
     box-shadow: 0px 10px 9px -6px #67e827;
 }
 
-
 /* the green color for the login and register modals */
 
 .modal-signature-green {
     background-color: #67e827;
     color: white;
 }
-
 
 /* the blue color for the login and register modals */
 
@@ -174,7 +163,6 @@
     color: white;
 }
 
-
 /* add padding to the navbar "buttons" */
 
 li {
@@ -182,7 +170,6 @@ li {
     padding-right: 5px;
     padding-left: 5px;
 }
-
 
 /* main tyling for the footer */
 
@@ -197,14 +184,12 @@ li {
     color: white;
 }
 
-
 /* make links look pretty */
 
 .prettyLink {
     text-decoration: none;
     color: #3d94ff;
 }
-
 
 /* change link color when hovered */
 
