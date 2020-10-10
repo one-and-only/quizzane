@@ -82,6 +82,7 @@ echo '
 </audio>
 
 <script>
+
 number = 1
 joinSong = "join" + number
 
@@ -101,9 +102,18 @@ function playJoin() {
     fn(1);
 }
 
-$(window).on("load", function() {
-    playJoin();
-});
+function sleep(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+  }
+  
+  $(window).on("load", function() {
+          async function showMusicModal() {
+          await sleep(1000);
+          $("#musicModal").modal("show");
+      }
+      showMusicModal();
+  });
+
 </script>
 
 </head>
@@ -118,7 +128,28 @@ $(window).on("load", function() {
          <input type="submit" style="font-size: 25px !important; padding: 1vh 4.25vw !important;" class="btn-signature-blue" value="Join Game" id="submitCode" />
       </div>
    </form>
-   <button onclick="playJoin()">play join</button>
+</div>
+
+<!-- enable music modal -->
+
+<div class="modal fade" id="musicModal" tabindex="-1" aria-labelledby="musicModal" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header modal-signature-green">
+        <h5 class="modal-title" id="exampleModalLabel">Music</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body modal-signature-blue">
+        Would you like to enable music on this page?
+      </div>
+      <div class="modal-footer modal-signature-blue">
+        <button type="button" class="btn-signature-red" data-dismiss="modal">No</button>
+        <button type="button" class="btn-signature-green" data-dismiss="modal" onclick="playJoin()">Yes</button>
+      </div>
+    </div>
+  </div>
 </div>
 
 </body>
