@@ -1,0 +1,229 @@
+/* main styling for the blue button */
+
+.btn-signature-blue {
+    -moz-box-shadow: 0px 7px 14px -7px #548dff;
+    -webkit-box-shadow: 0px 7px 14px -7px #548dff;
+    box-shadow: 0px 7px 14px -7px #548dff;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #3d94ff), color-stop(1, #5e94ff));
+    background: -moz-linear-gradient(top, #3d94ff 5%, #5e94ff 100%);
+    background: -webkit-linear-gradient(top, #3d94ff 5%, #5e94ff 100%);
+    background: -o-linear-gradient(top, #3d94ff 5%, #5e94ff 100%);
+    background: -ms-linear-gradient(top, #3d94ff 5%, #5e94ff 100%);
+    background: linear-gradient(to bottom, #3d94ff 5%, #5e94ff 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#3d94ff', endColorstr='#5e94ff', GradientType=0);
+    background-color: #3d94ff;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    border: 1px solid #4c8eff;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff !important;
+    font-family: Arial;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 5px 11px;
+    text-decoration: none;
+}
+
+
+/* blue button when hovered over */
+
+.btn-signature-blue:hover {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #5e94ff), color-stop(1, #3d94ff));
+    background: -moz-linear-gradient(top, #5e94ff 5%, #3d94ff 100%);
+    background: -webkit-linear-gradient(top, #5e94ff 5%, #3d94ff 100%);
+    background: -o-linear-gradient(top, #5e94ff 5%, #3d94ff 100%);
+    background: -ms-linear-gradient(top, #5e94ff 5%, #3d94ff 100%);
+    background: linear-gradient(to bottom, #5e94ff 5%, #3d94ff 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#5e94ff', endColorstr='#3d94ff', GradientType=0);
+    background-color: #5e94ff;
+    color: black !important;
+}
+
+
+/* blue button when clicked */
+
+.btn-signature-blue:active {
+    position: relative;
+    top: 1px;
+}
+
+
+/* main styling for the green button */
+
+.btn-signature-green {
+    -moz-box-shadow: 0px 6px 11px -7px #3e7327;
+    -webkit-box-shadow: 0px 6px 11px -7px #3e7327;
+    box-shadow: 0px 6px 11px -7px #3e7327;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #67e827), color-stop(1, #81de52));
+    background: -moz-linear-gradient(top, #67e827 5%, #81de52 100%);
+    background: -webkit-linear-gradient(top, #67e827 5%, #81de52 100%);
+    background: -o-linear-gradient(top, #67e827 5%, #81de52 100%);
+    background: -ms-linear-gradient(top, #67e827 5%, #81de52 100%);
+    background: linear-gradient(to bottom, #67e827 5%, #81de52 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#67e827', endColorstr='#81de52', GradientType=0);
+    background-color: #67e827;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    border: 1px solid #4b8f29;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff !important;
+    font-family: Arial;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 5px 11px;
+    text-decoration: none;
+}
+
+
+/* the green button when hovered over */
+
+.btn-signature-green:hover {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #81de52), color-stop(1, #67e827));
+    background: -moz-linear-gradient(top, #81de52 5%, #67e827 100%);
+    background: -webkit-linear-gradient(top, #81de52 5%, #67e827 100%);
+    background: -o-linear-gradient(top, #81de52 5%, #67e827 100%);
+    background: -ms-linear-gradient(top, #81de52 5%, #67e827 100%);
+    background: linear-gradient(to bottom, #81de52 5%, #67e827 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#81de52', endColorstr='#67e827', GradientType=0);
+    background-color: #81de52;
+    color: black !important;
+}
+
+
+/* the green button when clicked */
+
+.btn-signature-green:active {
+    position: relative;
+    top: 1px;
+}
+
+
+/* main styling for the red button */
+
+.btn-signature-red {
+    -moz-box-shadow: 0px 6px 11px -7px #3e7327;
+    -webkit-box-shadow: 0px 6px 11px -7px #3e7327;
+    box-shadow: 0px 6px 11px -7px #3e7327;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #eb284b), color-stop(1, #ff3838));
+    background: -moz-linear-gradient(top, #eb284b 5%, #ff3838 100%);
+    background: -webkit-linear-gradient(top, #eb284b 5%, #ff3838 100%);
+    background: -o-linear-gradient(top, #eb284b 5%, #ff3838 100%);
+    background: -ms-linear-gradient(top, #eb284b 5%, #ff3838 100%);
+    background: linear-gradient(to bottom, #eb284b 5%, #ff3838 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#eb284b', endColorstr='#ff3838', GradientType=0);
+    background-color: #eb284b;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    border: 1px solid #4b8f29;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 5px 11px;
+    text-decoration: none;
+}
+
+
+/* the red button when hovered over */
+
+.btn-signature-red:hover {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ff3838), color-stop(1, #eb284b));
+    background: -moz-linear-gradient(top, #ff3838 5%, #eb284b 100%);
+    background: -webkit-linear-gradient(top, #ff3838 5%, #eb284b 100%);
+    background: -o-linear-gradient(top, #ff3838 5%, #eb284b 100%);
+    background: -ms-linear-gradient(top, #ff3838 5%, #eb284b 100%);
+    background: linear-gradient(to bottom, #ff3838 5%, #eb284b 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#ff3838', endColorstr='#eb284b', GradientType=0);
+    background-color: #ff3838;
+}
+
+
+/* the red button when clicked */
+
+.btn-signature-red:active {
+    position: relative;
+    top: 1px;
+}
+
+
+/* the green navbar gradient */
+
+.nav-signature-green {
+    background-image: -webkit-linear-gradient(left, white 1%, #53ed65, #53ed65, #53ed65, #53ed65, #53ed65, #53ed65, #53ed65, #53ed65, #53ed65);
+}
+
+
+/* the green color for the login and register modals */
+
+.modal-signature-green {
+    background-color: #67e827;
+    color: white;
+}
+
+
+/* the blue color for the login and register modals */
+
+.modal-signature-blue {
+    background-color: #3d94ff;
+    color: white;
+}
+
+
+/* add padding to the navbar "buttons" */
+
+li {
+    display: inline;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+
+/* main tyling for the footer */
+
+.footer {
+    position: fixed;
+    padding-top: 20px;
+    left: 0;
+    bottom: 0px;
+    text-align: center;
+    width: 100%;
+    background-color: #67e827;
+    color: white;
+}
+
+
+/* make links look pretty */
+
+.prettyLink {
+    text-decoration: none;
+    color: #3d94ff;
+}
+
+
+/* change link color when hovered */
+
+.prettyLink:hover {
+    color: black;
+    text-decoration: none;
+}
+
+.footerImportant {
+    font-size: 18px;
+}
+
+.announcement {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    line-height: 25px;
+    width: 95vw;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
