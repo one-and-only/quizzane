@@ -45,7 +45,7 @@ if (isset($_SESSION['username'])) {
       </ul>
     <ul class="navbar-nav">
     <li class="nav-item dropdown" style="padding-right: 10px; padding-left: 10px;">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownUser" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <a class="nav-link dropdown-toggle btn-signature-green" href="#" id="navbarDropdownUser" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           ' . $_SESSION["username"] . '
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdownUser" style="background-color: white; border-radius: 10px;">
