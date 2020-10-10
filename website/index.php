@@ -14,4 +14,3 @@ echo '
 <meta name="description" content="Quizzane Homepage. Create and Join quiz games in varying categories in this familiar and exciting game format for FREE!">
 ';
 include('header.php');
-?>
