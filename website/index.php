@@ -30,7 +30,6 @@ if ($getLatestAnnouncements->execute()) {
     foreach ($announcements as $announcement) {
         // Let's put the HTML directly here. No need for an extra array
     ?>
-        <title>Announcements | Quizzane</title>
         <div style="text-align: center; font-size: 25px; background-color: #67e827; color: white; border-radius: 15px;"><a>Latest Announcement</a></div>
         <!-- empty div for padding -->
         <div style="padding-bottom: 0.5vh;"></div>

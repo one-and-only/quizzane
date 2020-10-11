@@ -108,7 +108,7 @@ function sleep(ms) {
   
   $(window).on("load", function() {
           async function showMusicModal() {
-          await sleep(1000);
+          await sleep(500);
           $("#musicModal").modal("show");
       }
       showMusicModal();
