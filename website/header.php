@@ -52,8 +52,8 @@ if (isset($_SESSION['username'])) {
           ' . $_SESSION["username"] . '
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdownUser" style="background-color: white; border-radius: 10px;">
-          <a class="dropdown-item" href="src/logout.php">Logout</a>
-          <a class="dropdown-item disabled" href="profile">Profile</a>
+          <a class="dropdown-item" href="src/user/logout.php">Logout</a>
+          <a class="dropdown-item" href="src/user/profile.php">Profile</a>
         </div>
       </li>
     </ul>
