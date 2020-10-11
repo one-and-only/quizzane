@@ -73,12 +73,17 @@ echo '
    font-size: 35px;
    color: #495057 !important;
    text-align: center;
+   border-radius: 10px;
 }
 </style>
 <link rel="stylesheet" href="src/styles.css">
 
+<!-- audio library for join page -->
 <audio id="join1">
     <source src="/src/audio/join-page-audio1.mp3" type="audio/mpeg">
+</audio>
+<audio id="join2">
+    <source src="/src/audio/join-page-audio2.mp3" type="audio/mpeg">
 </audio>
 
 <script>
@@ -92,7 +97,7 @@ function playJoin() {
         let audio = document.getElementById(joinSong);
         audio.play();
         audio.onended = function() {
-            if (number <= 1) {
+            if (number < 2) {
                 fn(number + 1);
             } else {
                 fn(1);
@@ -123,7 +128,7 @@ function sleep(ms) {
    <form action="joinbe.php" method="GET" style="padding-left: 40vw; padding-top: 30vh;">
       <div>
          <label for="inputCode"></label>
-         <input type="text" class="form-control join codeInput" name="code" id="inputCode" placeholder="123456789" pattern="[0-9]{9}" title="Must be a 9-character number" required />
+         <input type="text" class="form-control codeInput" name="code" id="inputCode" placeholder="123456789" pattern="[0-9]{9}" title="Must be a 9-character number" required />
          <label for="submitCode"></label>
          <input type="submit" style="font-size: 25px !important; padding: 1vh 4.25vw !important;" class="btn-signature-blue" value="Join Game" id="submitCode" />
       </div>
