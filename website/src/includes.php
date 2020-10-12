@@ -4,6 +4,7 @@ include('setCache.php');
 //stylesheets, scripts, and favicon
 echo '
 <!DOCTYPE html>
+<head>
 <link rel="stylesheet" href="/src/bootstrap/css/bootstrap.min.css">
 <link rel="shortcut icon" type="image/png" href="/src/logos/quizzane-no-text.png">
 <script src="/src/bootstrap/js/jquery-3.5.1.slim.min.js"></script>
