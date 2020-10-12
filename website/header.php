@@ -146,10 +146,10 @@ if (isset($_SESSION['username'])) {
 </p>
 </div>
   <div class="form-group">
-    <input type="text" class="form-control" id="loginUsername" name="username" aria-describedby="loginUsername" placeholder = "Username *" required />
+    <input style="border-radius: 10px;" type="text" class="form-control" id="loginUsername" name="username" aria-describedby="loginUsername" placeholder = "Username *" required />
   </div>
   <div class="form-group">
-    <input type="password" class="form-control" id="loginPassword" name="password"placeholder = "Password *" required />
+    <input style="border-radius: 10px;" type="password" class="form-control" id="loginPassword" name="password"placeholder = "Password *" required />
   </div>
       <div class="modal-footer" style="padding-bottom: 3vh;">
         <button type="button" class="btn btn-signature-red" data-dismiss="modal">Cancel</button>
@@ -178,18 +178,18 @@ if (isset($_SESSION['username'])) {
                 <div class="col-md-6">
                     <form action="/src/registerbe" method="POST" name="registerForm">
                         <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Username *" name="username" required />
+                            <input style="border-radius: 10px;" type="text" class="form-control" placeholder="Username *" name="username" required />
                         </div>
                         <div class="form-group">
-                            <input type="text" class="form-control" name="email" maxlength="64" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" title = "Must be a valid email and less than 64 characters" placeholder="Email *" required>
+                            <input style="border-radius: 10px;" type="text" class="form-control" name="email" maxlength="64" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" title = "Must be a valid email and less than 64 characters" placeholder="Email *" required>
                         </div>
                 </div>
                 <div class="col-md-6">
                     <div class="form-group">
-                        <input type="password" class="form-control" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" placeholder="Your Password *" name="passwordField1" required />
+                        <input style="border-radius: 10px;" type="password" class="form-control" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" placeholder="Your Password *" name="passwordField1" required />
                     </div>
                     <div class="form-group">
-                        <input type="password" class="form-control" placeholder="Confirm Password *" name="passwordField2" required />
+                        <input style="border-radius: 10px;" type="password" class="form-control" placeholder="Confirm Password *" name="passwordField2" required />
                     </div>
                 </div>
             </div>
