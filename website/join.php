@@ -125,7 +125,7 @@ function sleep(ms) {
 <body class="join">
 
 <div>
-   <form action="joinbe.php" method="GET" style="padding-left: 40vw; padding-top: 30vh;">
+   <form action="/joinbe" method="GET" style="padding-left: 40vw; padding-top: 30vh;">
       <div>
          <label for="inputCode"></label>
          <input type="text" class="form-control codeInput" name="code" id="inputCode" placeholder="123456789" pattern="[0-9]{9}" title="Must be a 9-character number" required />

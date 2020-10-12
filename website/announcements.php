@@ -36,3 +36,4 @@ if ($getRecentAnnouncements->execute()) {
     </div>
     <?php
 }
+include('footer.php');

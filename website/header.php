@@ -13,7 +13,7 @@ if (isset($_SESSION['username'])) {
   <body>
 
   <nav class="navbar navbar-expand-lg nav-signature-green navbar-light" style="border-radius: 10px; border: 2px solid #67e827;">
-  <a class="navbar-brand" href="/"><img src="src/logos/quizzane-no-text.png" alt="Quizzane Logo Without Text" height="32"></a>
+  <a class="navbar-brand" href="/"><img src="/src/logos/quizzane-no-text.png" alt="Quizzane Logo Without Text" height="32"></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -24,26 +24,26 @@ if (isset($_SESSION['username'])) {
         <a class="nav-link btn-signature-green" href="/">Home</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link btn-signature-blue" href="create.php">Create Games</a>
+        <a class="nav-link btn-signature-blue" href="/create">Create Games</a>
       </li>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle btn-signature-blue" href="#" id="navbarDropdownGames" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Browse Games
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdownGames" style="background-color: white; border-radius: 10px;">
-          <a class="dropdown-item" href="games.php">Sports</a>
-          <a class="dropdown-item" href="games.php">Movies</a>
-          <a class="dropdown-item" href="games.php">TV Shows</a>
-          <a class="dropdown-item" href="games.php">Technology</a>
-          <a class="dropdown-item" href="games.php">Web Development</a>
-          <a class="dropdown-item" href="games.php">Education</a>
+          <a class="dropdown-item" href="/games">Sports</a>
+          <a class="dropdown-item" href="/games">Movies</a>
+          <a class="dropdown-item" href="/games">TV Shows</a>
+          <a class="dropdown-item" href="/games">Technology</a>
+          <a class="dropdown-item" href="/games">Web Development</a>
+          <a class="dropdown-item" href="/games">Education</a>
         </div>
       </li>
       <li class="nav-item">
-        <a class="nav-link btn-signature-blue" href="announcements.php">Announcements</a>
+        <a class="nav-link btn-signature-blue" href="/announcements">Announcements</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link disabled" href="community.php">Community</a>
+        <a class="nav-link disabled" href="/community">Community</a>
       </li>
       </ul>
     <ul class="navbar-nav">
@@ -52,12 +52,12 @@ if (isset($_SESSION['username'])) {
           ' . $_SESSION["username"] . '
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdownUser" style="background-color: white; border-radius: 10px;">
-          <a class="dropdown-item" href="src/user/profile.php">Profile</a>
-          <a class="dropdown-item" href="src/user/logout.php">Logout</a>
+          <a class="dropdown-item" href="/src/user/profile">Profile</a>
+          <a class="dropdown-item" href="/src/user/logout">Logout</a>
         </div>
       </li>
     </ul>
-    <form class="form-inline my-2 my-lg-0" method="POST" action="games.php">
+    <form class="form-inline my-2 my-lg-0" method="POST" action="/games">
       <input class="form-control mr-sm-2" name="search" type="search" placeholder="Game Title..." aria-label="Search">
       <button class="btn-signature-blue my-2 my-sm-0" type="submit">Search Games</button>
     </form>
@@ -78,7 +78,7 @@ if (isset($_SESSION['username'])) {
   <body>
 
   <nav class="navbar navbar-expand-lg nav-signature-green navbar-light" style="border-radius: 10px; border: 2px solid #67e827;">
-  <a class="navbar-brand" href="/"><img src="src/logos/quizzane-no-text.png" alt="Quizzane Logo Without Text" height="32"></a>
+  <a class="navbar-brand" href="/"><img src="/src/logos/quizzane-no-text.png" alt="Quizzane Logo Without Text" height="32"></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -89,26 +89,26 @@ if (isset($_SESSION['username'])) {
         <a class="nav-link btn-signature-green" href="/">Home</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link btn-signature-blue" href="create.php">Create Games</a>
+        <a class="nav-link btn-signature-blue" href="/create">Create Games</a>
       </li>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle btn-signature-blue" href="#" id="navbarDropdownGames" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Browse Games
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdownGames" style="background-color: white; border-radius: 10px;">
-          <a class="dropdown-item" href="games.php">Sports</a>
-          <a class="dropdown-item" href="games.php">Movies</a>
-          <a class="dropdown-item" href="games.php">TV Shows</a>
-          <a class="dropdown-item" href="games.php">Technology</a>
-          <a class="dropdown-item" href="games.php">Web Development</a>
-          <a class="dropdown-item" href="games.php">Education</a>
+          <a class="dropdown-item" href="/games">Sports</a>
+          <a class="dropdown-item" href="/games">Movies</a>
+          <a class="dropdown-item" href="/games">TV Shows</a>
+          <a class="dropdown-item" href="/games">Technology</a>
+          <a class="dropdown-item" href="/games">Web Development</a>
+          <a class="dropdown-item" href="/games">Education</a>
         </div>
       </li>
       <li class="nav-item">
-        <a class="nav-link btn-signature-blue" href="announcements.php">Announcements</a>
+        <a class="nav-link btn-signature-blue" href="/announcements">Announcements</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link disabled" href="community.php">Community</a>
+        <a class="nav-link disabled" href="/community">Community</a>
       </li>
       </ul>
   <ul class="navbar-nav">
@@ -121,7 +121,7 @@ if (isset($_SESSION['username'])) {
     </li>
   </div>
   </ul>
-    <form class="form-inline my-2 my-lg-0" method="POST" action="games.php">
+    <form class="form-inline my-2 my-lg-0" method="POST" action="/games">
       <input class="form-control mr-sm-2" name="search" type="search" placeholder="Game Title..." aria-label="Search">
       <button class="btn-signature-blue my-2 my-sm-0" type="submit">Search Games</button>
     </form>
@@ -139,7 +139,7 @@ if (isset($_SESSION['username'])) {
         </button>
       </div>
       <div class="modal-body modal-signature-blue" style="padding-bottom: 0px;">
-      <form action="src/loginbe.php" method="POST" name="loginForm">
+      <form action="/src/loginbe" method="POST" name="loginForm">
 <div>
 <p style="padding-left: 5px;">
 <span style="font-size: 1rem; color: white;">*</span> = required
@@ -176,7 +176,7 @@ if (isset($_SESSION['username'])) {
         <p style="padding-left: 5px;"><sup><span style="font-size: 1rem; color: white;">*</span></sup> = Required</p>
             <div class="row">
                 <div class="col-md-6">
-                    <form action="src/registerbe.php" method="POST" name="registerForm">
+                    <form action="/src/registerbe" method="POST" name="registerForm">
                         <div class="form-group">
                             <input type="text" class="form-control" placeholder="Username *" name="username" required />
                         </div>

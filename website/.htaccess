@@ -1,0 +1,16 @@
+#Enable The Rewrite Engine
+RewriteEngine on
+
+#Redirect for my GitHub profile
+Redirect 301 /github https://github.com/one-and-only
+Redirect 301 /onlinewebfonts https://www.onlinewebfonts.com/
+
+#Remove PHP File Extensions
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.php -f
+RewriteRule ^(.*)$ $1.php [NC,L]
+
+#Remove HTML File Extensions
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.html -f
+RewriteRule ^(.*)$ $1.html [NC,L]

@@ -3,6 +3,7 @@ ob_start();
 session_name('user');
 session_start();
 session_regenerate_id(true);
+ob_end_flush();
 include('openssl.php');
 $openssl = new encrypt('openssl.php');
 include('dbconn.php');
@@ -17,8 +18,15 @@ $userInfo = [
     ':password' => $password
 ];
 $registerSQL = $pdo->prepare($registerSQL);
-$registerSQL->execute($userInfo);
-$_SESSION['username'] = $username;
-setcookie('auth', sodium_crypto_pwhash_str('YES', 2, 67108864));
-$URL = "/";
-echo '<META HTTP-EQUIV="refresh" content="0;URL=' . $URL . '">';
+
+if ($registerSQL->execute($userInfo)) {
+    $_SESSION['username'] = $username;
+    $_SESSION['isAuthorized'] = 'YES';
+    $URL = "/";
+    echo '<META HTTP-EQUIV="refresh" content="0;URL=' . $URL . '">';
+}
+else {
+    if (!isset($_SESSION['isAuthorized']) or $_SESSION['isAuthorized'] != 'YES') {
+        $_SESSION['isAauthorized'] = 'NO';
+    }
+}

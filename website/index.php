@@ -11,9 +11,15 @@ include('src/includes.php');
 //stuff for SEO
 echo '
 <title>Home | Quizzane</title>
-<meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="description" content="Quizzane Homepage. Create and Join quiz games in varying categories in this familiar and exciting game format for FREE!">
+<meta name="title" content="Home | Quizzane">
+<meta name="description" content="Create and Join quiz games in varying categories in this familiar and exciting game format for FREE!">
+<meta name="keywords" content="quizzane, quiz, quiz game, kahoot, kahoot it, quizziz, quizzes">
+<meta name="robots" content="index, follow">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="language" content="English">
+<meta name="revisit-after" content="30 days">
+<meta name="author" content="Antonios P.">
 ';
 include('header.php');
 
@@ -44,7 +50,7 @@ if ($getLatestAnnouncements->execute()) {
             </div>
             <hr class="my-4">
             <p style="font-size: 15px;">This is usually only part of the announcement. If you would like to read more, and view more announcements, please click the button below.</p>
-            <a class="btn-signature-green" href="announcements.php" style="font-size: 20px; text-decoration: none !important;" role="button">Read Announcements</a>
+            <a class="btn-signature-green" href="/announcements" style="font-size: 20px; text-decoration: none !important;" role="button">Read Announcements</a>
         </div>
     <?php
     }

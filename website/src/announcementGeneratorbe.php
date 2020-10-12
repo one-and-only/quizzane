@@ -14,7 +14,7 @@ $params = [
 $insertAnnouncement = $pdo->prepare($insertAnnouncement);
 
 if ($insertAnnouncement->execute($params)) {
-    $URL = '/src/announcementGenerator.html';
+    $URL = '/src/announcementGenerator';
     echo '<META HTTP-EQUIV="refresh" content="0;URL=' . $URL . '">';
 }
 else {

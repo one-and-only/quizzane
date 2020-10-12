@@ -1,6 +1,5 @@
 <?php
-if (!isset($_COOKIE['auth']) or !sodium_crypto_pwhash_str_verify($_COOKIE['auth'], 'YES')) {
+if (!isset($_SESSION['isAuthorized']) or $_SESSION['isAuthorized'] != 'YES') {
     $_SESSION['redirect'] = 'UNAUTHORIZED';
-    $URL = "/";
-    echo '<META HTTP-EQUIV="refresh" content="0;URL=' . $URL . '">';
+    return 'UNAUTHORIZED';
 }
