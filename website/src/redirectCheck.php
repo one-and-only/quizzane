@@ -1,4 +1,5 @@
 <?php
+ob_start();
 include('includes.php');
 
 switch ($_SESSION['redirectReason']) {
@@ -29,6 +30,14 @@ switch ($_SESSION['redirectReason']) {
         break;
     case 'REGISTER-SUCCESS':
         echo '//registered successfully success sweetalert';
+        $_SESSION['redirectReason'] = '';
+        break;
+    case 'UNSET-PASSWORD':
+        echo '//password field is unset error sweetalert';
+        $_SESSION['redirectReason'] = '';
+        break;
+    case 'UNSET-CONFIRM-PASSWORD':
+        echo '//confirm password field is unset error sweetalert';
         $_SESSION['redirectReason'] = '';
         break;
 }

@@ -6,10 +6,9 @@ session_start();
 session_regenerate_id(false);
 if (!isset($_SESSION['isAuthorized']) or $_SESSION['isAuthorized'] != 'YES') {
     if ($_SESSION['isAauthorized'] = 'NO') {
-        echo 'Set Auth Var';
         ob_end_flush();
     } else {
-        echo 'Unable to set Authorization Cookie (required for this site to function). Please disable all anti-cookie settings in your browser.';
+        echo 'Unable to set the Authorization Cookie (required for this site to function). Please disable all anti-cookie settings in your browser.';
         ob_end_flush();
         exit();
     }
