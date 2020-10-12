@@ -129,7 +129,7 @@
 /* style for the disabled buttons */
 
 .btn-signature-blue:disabled, .btn-signature-green:disabled, .btn-signature-red:disabled {
-    background: #c4c4c4 !important;
+    background: #d3d3d3 !important;
     color: white !important;
     pointer-events: none;
     box-shadow: 0px !important;
