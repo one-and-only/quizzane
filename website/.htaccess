@@ -1,7 +1,7 @@
 #Enable The Rewrite Engine
 RewriteEngine on
 
-#Redirect for my GitHub profile
+#301 Redirects
 Redirect 301 /github https://github.com/one-and-only
 Redirect 301 /onlinewebfonts https://www.onlinewebfonts.com/
 
