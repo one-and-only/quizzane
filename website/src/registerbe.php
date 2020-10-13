@@ -10,12 +10,15 @@ include('dbconn.php');
 $username = $_POST['username'];
 $email = $openssl->opensslEncryptAES256($_POST['email'], include('opensslkey.php'));
 $password = sodium_crypto_pwhash_str($_POST['passwordField1'], 4, 128000000);
+$st = time();
+$dateSrc = new DateTime("@$st");
 
-$registerSQL = "INSERT INTO users (username, email, password) VALUES (:username, :email, :password)";
+$registerSQL = "INSERT INTO users (username, email, password, activeSince) VALUES (:username, :email, :password, :activeSince)";
 $userInfo = [
     ':username' => $username,
     ':email' => $email,
-    ':password' => $password
+    ':password' => $password,
+    ':activeSince' => $dateSrc->format('Y-m-d')
 ];
 $registerSQL = $pdo->prepare($registerSQL);
 

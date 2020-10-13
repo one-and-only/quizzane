@@ -79,9 +79,6 @@ if ($getUserInfo->execute($username)) {
             <tbody>';
                 $rowNum = 1;
                 foreach ($pdo->query($getLeaderboard) as $row) {
-                    if ($row['userScore'] == "") {
-                        $row['userScore'] = "0";
-                    }
                     echo '
                     <tr class="medals">
                     <th scope="row">'.$rowNum.'</th>
@@ -90,6 +87,27 @@ if ($getUserInfo->execute($username)) {
                     </tr>
                     ';
                     $rowNum++;
+                }
+                $getStatistics = "SELECT * FROM users ORDER BY userScore DESC";
+                $place = 1;
+                foreach ($pdo->query($getStatistics) as $row) {
+                    if ($row['username'] == $_SESSION['username']) {
+                        $userScore = $row['userScore'];
+                        $userPlace = $place;
+                        $userQuestionsAnswered = $row['questionsAnswered'];
+                        $userHighestAnswerStreak = $row['highestAnswerStreak'];
+                        if ($row['correctAnswers'] == 0 and $row['wrongAnswers'] == 0) {
+                            $userCorrectAnswerRatio = 0;
+                        }
+                        elseif ($row['correctAnswers'] > 0 and $row['wrongAnswers'] == 0) {
+                            $userCorrectAnswerRatio = $row['correctAnswers'];
+                        }
+                        else {
+                            $userCorrectAnswerRatio = ($row['correctAnswers'] / $row['wrongAnswers']);
+                        }
+                        $userActiveSince = $row['activeSince'];
+                    }
+                    $place++;
                 }
             echo '
             </tbody>
@@ -119,7 +137,16 @@ if ($getUserInfo->execute($username)) {
                 </div>
                 </form>
             </div>
-            <div class="column">
+            <div align="left" class="column" style="position: absolute; right: 2vw;">
+                <h2 align="center" style="background-color: #67e827; padding-bottom: 1vh; border-radius: 15px; color: white;">User Statistics</h2>
+                <ul class="list-group" style="border-radius: 15px;">
+                    <li class="list-group-item modal-signature-blue">Total Score: '.$userScore.'</li>
+                    <li class="list-group-item modal-signature-blue">Total Questions Answered: '.$userQuestionsAnswered.'</li>
+                    <li class="list-group-item modal-signature-blue">Global Leaderboard Position: '.$userPlace.'</li>
+                    <li class="list-group-item modal-signature-blue">Highest Answer Streak: '.$userHighestAnswerStreak.'</li>
+                    <li class="list-group-item modal-signature-blue">Correct Answer Ratio: '.$userCorrectAnswerRatio.'</li>
+                    <li class="list-group-item modal-signature-blue">Active Since: '.$userActiveSince.'</li>
+                </ul>
             </div>
         </div>
     ';
