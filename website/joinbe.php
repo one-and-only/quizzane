@@ -6,7 +6,7 @@ session_start();
 ob_end_flush();
 
 function redirectToJoin() {
-    $URL = 'join.php';
+    $URL = 'join';
     echo '<META HTTP-EQUIV="refresh" content="0;URL=' . $URL . '">';
 }
 
@@ -22,17 +22,14 @@ if ($getCode->execute($gameCode)) {
     }
     elseif ($getCode->rowCount() > 1) {
         $_SESSION['redirectReason'] = 'DUPLICATE-GAMECODE';
-        $_SESSION['toPage'] = 'join';
         redirectToJoin();
     }
     elseif ($getCode->rowCount() == 0) {
         $_SESSION['redirectReason'] = 'GAME-NOT-FOUND';
-        $_SESSION['toPage'] = 'join';
         redirectToJoin();
     }
 }
 else {
     $_SESSION['redirectReason'] = 'UNKNOWN-ERROR';
-    $_SESSION['toPage'] = 'join';
     redirectToJoin();
 }

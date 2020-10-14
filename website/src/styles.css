@@ -212,3 +212,13 @@ li {
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
 }
+
+.prettyLinkSweetalert {
+    text-decoration: none;
+    color: #67e827;
+}
+
+.prettyLinkSweetalert:hover {
+    color: black;
+    text-decoration: none; 
+}

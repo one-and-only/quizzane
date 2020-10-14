@@ -25,6 +25,7 @@ $registerSQL = $pdo->prepare($registerSQL);
 if ($registerSQL->execute($userInfo)) {
     $_SESSION['username'] = $username;
     $_SESSION['isAuthorized'] = 'YES';
+    $_SESSION['redirectReason'] = 'REGISTER-SUCCESS';
     $URL = "/";
     echo '<META HTTP-EQUIV="refresh" content="0;URL=' . $URL . '">';
 }

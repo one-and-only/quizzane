@@ -28,11 +28,12 @@ $checkAgainstPassword = $checkAgainstPassword['password'];
 if (sodium_crypto_pwhash_str_verify($checkAgainstPassword, $checkPassword)) {
     $_SESSION['username'] = $checkUsername;
     $_SESSION['isAauthorized'] = 'YES';
+    $_SESSION['redirectReason'] = 'LOGIN-SUCCESS';
     ob_end_flush();
     $URL = "/";
     echo '<META HTTP-EQUIV="refresh" content="0;URL=' . $URL . '">';
 } else {
-    echo 'Invalid Username and Password Combination. Redirecting...<br>';
+    $_SESSION['redirectReason'] = 'INVALID-USERPASS';
     ob_end_flush();
     $URL = "/";
     echo '<META HTTP-EQUIV="refresh" content="0;URL=' . $URL . '">';

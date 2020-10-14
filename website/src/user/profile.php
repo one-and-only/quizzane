@@ -6,6 +6,7 @@ include('../openssl.php');
 $openssl = new encrypt('../openssl.php');
 echo '<title>Profile | Quizzane</title>';
 include('../../header.php');
+include('../redirectCheck.php');
 ob_end_flush();
 
 $getUserInfo = "SELECT * FROM users WHERE username = :username";
