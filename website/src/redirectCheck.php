@@ -137,6 +137,21 @@ switch ($_SESSION['redirectReason']) {
         ";
         $_SESSION['redirectReason'] = '';
         break;
+    case 'UPDATE-SAME-PASSWORD':
+        echo "
+            <script>
+            $(window).on('load', function(){
+                swal.fire ({
+                    icon: 'error',
+                    title: 'Passwords Identical',
+                    text: 'Your updated password is the same as the current password.',
+                    footer: 'Still having issues? <a style=\'padding-left: 3px; padding-top: 0.75px;\' href=\'mailto:bdpaboi123@gmail.com\' class=\'prettyLinkSweetalert\'> Contact Us</a>'
+                });
+            });
+            </script>
+            ";
+        $_SESSION['redirectReason'] = '';
+        break;
     case 'UNAUTHORIZED':
         echo "
             <script>
