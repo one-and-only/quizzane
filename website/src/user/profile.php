@@ -61,7 +61,7 @@ if ($getUserInfo->execute($username)) {
           background-color: silver;
       }
       .medals:nth-child(3) {
-          background-color: bronze;
+          background-color: #cd7f32;
       }
     </style>
 
