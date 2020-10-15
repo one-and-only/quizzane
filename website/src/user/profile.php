@@ -135,9 +135,11 @@ if ($getUserInfo->execute($username)) {
                 </div>
                 <div align="center" style="padding-bottom: 3vh;">
                 <button type="submit" id="updateAccountButton" class="btn-signature-green">Update Account</button>
-                </div>
                 </form>
+                <button type="button" id="deleteAccountModalToggle" data-toggle="modal" data-target="#deleteAccountModal" class="btn-signature-red">Delete Account</button>
+                </div>
             </div>
+
             <div align="left" class="column" style="position: absolute; right: 2vw;">
                 <h2 align="center" style="background-color: #67e827; padding-bottom: 1vh; border-radius: 15px; color: white;">User Statistics</h2>
                 <ul class="list-group" style="border-radius: 15px;">
@@ -150,6 +152,31 @@ if ($getUserInfo->execute($username)) {
                 </ul>
             </div>
         </div>
+    ';
+
+    // delete account confirmation modal
+    echo '
+    <!-- delete account confirmation modal -->
+    <div class="modal fade" id="deleteAccountModal" tabindex="-1" aria-labelledby="delete-account-modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+        <div class="modal-header modal-signature-green">
+            <h5 class="modal-title" id="deleteAccount">Delete Account</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <div class="modal-body modal-signature-blue">
+            Are you sure you want to delete your account? This action is irreversible and all account data including, but not limited to, account credentials, games, and statistics will be <span style="font-weight: 700; font-style: italic;">LOST</span>.
+        </div>
+        <div class="modal-footer modal-signature-blue">
+            <button type="button" class="btn-signature-green" data-dismiss="modal">No</button>
+            <form action="deleteAccount" method="POST"><input type="submit" value="Yes" class="btn-signature-red"></form>
+            </form>
+        </div>
+        </div>
+    </div>
+    </div>
     ';
 }
 include('../../footer.php');
