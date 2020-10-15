@@ -54,6 +54,15 @@ echo '
 <audio id="join2">
     <source src="/src/audio/join-page-audio2.mp3" type="audio/mpeg">
 </audio>
+<audio id="join3">
+    <source src="/src/audio/join-page-audio3.mp3" type="audio/mpeg">
+</audio>
+<audio id="join4">
+    <source src="/src/audio/join-page-audio4.mp3" type="audio/mpeg">
+</audio>
+<audio id="join5">
+    <source src="/src/audio/join-page-audio5.mp3" type="audio/mpeg">
+</audio>
 
 <script>
 
@@ -66,7 +75,7 @@ function playJoin() {
         let audio = document.getElementById(joinSong);
         audio.play();
         audio.onended = function() {
-            if (number < 2) {
+            if (number < 5) {
                 fn(number + 1);
             } else {
                 fn(1);
