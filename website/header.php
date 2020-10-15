@@ -27,6 +27,9 @@ if (isset($_SESSION['username'])) {
       <li class="nav-item" style="padding-top: 5px;">
         <a class="nav-link btn-signature-blue" href="/create">Create Games</a>
       </li>
+      <li class="nav-item" style="padding-top: 5px;">
+        <a class="nav-link btn-signature-blue" href="/join">Join By Code</a>
+      </li>
       <li class="nav-item dropdown" style="padding-top: 5px;">
         <a class="nav-link dropdown-toggle btn-signature-blue" href="#" id="navbarDropdownGames" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Browse Games
@@ -86,13 +89,16 @@ if (isset($_SESSION['username'])) {
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
+      <li class="nav-item active" style="padding-top: 5px;">
         <a class="nav-link btn-signature-green" href="/">Home</a>
       </li>
-      <li class="nav-item">
+      <li class="nav-item" style="padding-top: 5px;">
         <a class="nav-link btn-signature-blue" href="/create">Create Games</a>
       </li>
-      <li class="nav-item dropdown">
+      <li class="nav-item" style="padding-top: 5px;">
+        <a class="nav-link btn-signature-blue" href="/join">Join By Code</a>
+      </li>
+      <li class="nav-item dropdown" style="padding-top: 5px;">
         <a class="nav-link dropdown-toggle btn-signature-blue" href="#" id="navbarDropdownGames" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Browse Games
         </a>
@@ -105,7 +111,7 @@ if (isset($_SESSION['username'])) {
           <a class="dropdown-item" href="/games">Education</a>
         </div>
       </li>
-      <li class="nav-item">
+      <li class="nav-item" style="padding-top: 5px;">
         <a class="nav-link btn-signature-blue" href="/announcements">Announcements</a>
       </li>
       <li class="nav-item">
