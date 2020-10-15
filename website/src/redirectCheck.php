@@ -70,7 +70,7 @@ switch ($_SESSION['redirectReason']) {
         $(window).on('load', function(){
             swal.fire ({
                 icon: 'success',
-                title: 'Registration Successfull',
+                title: 'Registration Successful',
                 text: 'You have successfully registered your new account!',
                 footer: 'You are now automatically logged in.'
             });
@@ -100,7 +100,7 @@ switch ($_SESSION['redirectReason']) {
             $(window).on('load', function(){
                 swal.fire ({
                     icon: 'success',
-                    title: 'Login Successfull',
+                    title: 'Login Successful',
                     text: 'You have successfully logged in!'
                 });
             });
@@ -114,7 +114,7 @@ switch ($_SESSION['redirectReason']) {
             $(window).on('load', function(){
                 swal.fire ({
                     icon: 'success',
-                    title: 'Logout Successfull',
+                    title: 'Logout Successful',
                     text: 'You have successfully logged out'
                 });
             });
